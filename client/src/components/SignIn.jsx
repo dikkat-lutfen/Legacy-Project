@@ -1,7 +1,8 @@
 import React from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 import { toast } from "react-hot-toast";
+
 
 const SignIn = () => {
     const navigate = useNavigate();
@@ -40,6 +41,9 @@ const SignIn = () => {
                     required
                 />
                 <button type="submit">Sign In</button>
+                <Link style={{ color: 'black' , marginTop:"20px"}} to="/auth">
+                Click Here To Signup
+                </Link>
             </form>
         </div>
     );

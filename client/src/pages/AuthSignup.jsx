@@ -21,7 +21,7 @@ const Auth = () => {
     <Layout>
       <div className="authcontainer">
         <SignUp />
-        <SignIn />
+      
       </div>
     </Layout>
   );
