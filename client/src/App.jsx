@@ -12,7 +12,7 @@ const App = () => {
       <Toaster
         position="top-right"
          toastOptions={{
-          style: { fontSize: "1.8rem", marginTop:"40px" },
+          style: { fontSize: "1.8rem",  marginTop:"40px" },
         }}
       ></Toaster>
 
