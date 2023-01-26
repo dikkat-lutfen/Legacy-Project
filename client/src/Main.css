@@ -6,14 +6,17 @@
   --border-radius: 8px;
 
   /* colors */
-  --button-main--color: rgb(0, 121, 191);
+  --button-main--color: #0079bf;
   --button-text--color: #ffffff;
+
+  --main-text--color: rgb(77, 86, 118);
 
   --cookie-bg--color: rgb(239, 167, 58);
 
   /* input colors */
 
   --input-bg-color: #f5f8fa;
+  --input-text-color: #266fa0;
 
   /* hovers */
   --button-main--color-hover: rgb(79, 144, 182);
@@ -21,7 +24,7 @@
   --cookie-button--color-hover-edit: rgb(79, 182, 82);
 
   /* Placeholder */
-  --placeholder-text-color: rgb(118, 118, 118);
+  --placeholder-text-color: #266fa0b6;
 
   /* shadows */
   --shadow: 1px 2px 30px rgb(212, 222, 229);
@@ -41,12 +44,18 @@ input {
   font-size: inherit;
 }
 
+input {
+  color: var(--input-text-color);
+}
+
 ::placeholder {
   color: var(--placeholder-text-color);
+  font-size: 14px;
 }
 
 body {
   min-height: 100vh;
   font-size: 1rem;
   font-family: 'Lato', sans-serif;
+  color: var(--main-text--color);
 }
