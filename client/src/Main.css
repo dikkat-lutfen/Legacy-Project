@@ -1,8 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+:root {
+  /* borders */
+  --border-radius: 8px;
+
+  /* colors */
+  --button-main--color: rgb(0, 121, 191);
+  --button-text--color: #ffffff;
+
+  --cookie-bg--color: rgb(239, 167, 58);
+
+  /* input colors */
+
+  --input-bg-color: #f5f8fa;
+
+  /* hovers */
+  --button-main--color-hover: rgb(79, 144, 182);
+  --cookie-button--color-hover-delete: rgb(182, 79, 79);
+  --cookie-button--color-hover-edit: rgb(79, 182, 82);
+
+  /* Placeholder */
+  --placeholder-text-color: rgb(118, 118, 118);
+
+  /* shadows */
+  --shadow: 1px 2px 30px rgb(212, 222, 229);
+}
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Roboto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* this disable the caret from showing
+  when clicking on different elements */
+  user-select: none;
+}
+
+button,
+input {
+  font-size: inherit;
+}
+
+::placeholder {
+  color: var(--placeholder-text-color);
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
 }
