@@ -1,8 +1,10 @@
 import React from 'react';
 import { toast } from 'react-hot-toast';
 import axios from 'axios';
+import { useNavigate, Link } from 'react-router-dom';
 
 const SignUp = () => {
+  const navigate = useNavigate();
   const signUp = async (e) => {
     e.preventDefault();
     //Getting the values from the input
@@ -19,6 +21,8 @@ const SignUp = () => {
       e.target.name.value = '';
       e.target.email.value = '';
       e.target.password.value = '';
+      /* if its successful go to login */
+      navigate('/auth/signIn');
     } catch (error) {
       console.log(error);
       toast.error('Sign up Failed!');
@@ -49,6 +53,9 @@ const SignUp = () => {
         />
         <button type="submit">Sign Up</button>
       </form>
+      <Link style={{ color: 'black', marginTop: '20px' }} to="/auth/signIn">
+        Click Here To Sign In
+      </Link>
     </div>
   );
 };

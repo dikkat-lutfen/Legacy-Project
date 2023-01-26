@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { toast } from 'react-hot-toast';
 
 const SignIn = () => {
@@ -47,6 +47,9 @@ const SignIn = () => {
         />
         <button type="submit">Sign In</button>
       </form>
+      <Link style={{ color: 'black', marginTop: '20px' }} to="/auth">
+        Click Here To Signup
+      </Link>
     </div>
   );
 };
