@@ -47,8 +47,8 @@ const SignIn = () => {
         />
         <button type="submit">Sign In</button>
       </form>
-      <Link style={{ color: 'black', marginTop: '20px' }} to="/auth">
-        Click Here To Signup
+      <Link className="singUp-link" to="/auth">
+        Click Here To Sign Up
       </Link>
     </div>
   );
