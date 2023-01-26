@@ -1,17 +1,17 @@
-import React from "react";
-import { Toaster } from "react-hot-toast";
-import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Auth from "./pages/Auth";
-import PrivateRoutes from "./components/PrivateRoutes";
+import React from 'react';
+import { Toaster } from 'react-hot-toast';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Auth from './pages/Auth';
+import PrivateRoutes from './components/PrivateRoutes';
 
 const App = () => {
   return (
     <>
       <Toaster
-        position="top-right"
+        position="top-center"
         toastOptions={{
-          style: { fontSize: "1.8rem" },
+          style: { fontSize: '1.2rem' },
         }}
       ></Toaster>
 
