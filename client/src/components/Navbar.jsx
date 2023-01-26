@@ -22,7 +22,7 @@ const Navbar = () => {
       await axios.get('api/auth/signOut');
       setUser(null);
       toast.success('User signed out!');
-      navigate('/auth');
+      navigate('/auth/signIn');
     } catch (error) {
       console.log(error);
     }
@@ -43,7 +43,8 @@ const Navbar = () => {
       <div className="navbar-logo">
         <img
           src={logo}
-          style={{ width: '200px' }}
+          width="200px"
+          height="100px"
           alt="The cookie monster Pac-Man"
         />
       </div>
