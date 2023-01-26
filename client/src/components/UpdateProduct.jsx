@@ -32,6 +32,7 @@ function UpdateProduct(props) {
     <div className="wrapper">
       <div className="backdrop" onClick={props.togglePopUp}></div>
       <div className="popup-content">
+        <h2>Edit Cookie</h2>
         <input
           type="text"
           placeholder="Name . . ."
